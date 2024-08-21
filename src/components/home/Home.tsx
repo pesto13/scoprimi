@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import * as c from '../../../../Server/src/socketConsts.js';
+import * as c from '../../database/socketConsts';
 import { socket } from '../../ts/socketInit.ts';
-import { Game } from '../../../../Server/src/data/Game.ts';
+import { Game } from '../../database/Game.ts';
 import LobbyList from './LobbyList.tsx';
 import CreateGameForm from './CreateGameForm.tsx';
 import { useSession } from '../../contexts/SessionContext.tsx';

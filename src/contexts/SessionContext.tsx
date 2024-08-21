@@ -1,5 +1,5 @@
 import { socket } from '../ts/socketInit';
-import { JOIN_ROOM } from '../../../Server/src/socketConsts';
+import { JOIN_ROOM } from '../database/socketConsts';
 import { createContext, useState, useContext, ReactNode, useEffect } from 'react';
 
 interface SessionContextProps {

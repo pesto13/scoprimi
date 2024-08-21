@@ -1,4 +1,4 @@
-import { Game } from '../../../../Server/src/data/Game.ts';
+import { Game } from '../../database/Game';
 
 interface LobbyListProps {
   lobbies: Game[];
