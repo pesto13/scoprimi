@@ -13,16 +13,16 @@ const App = () => (
   <SessionProvider>
     <Router>
       <Routes>
-        <Route path="/scoprimi/" element={<Home />} />
-        <Route path="/scoprimi/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route
-          path="/scoprimi/lobby" element={<ProtectedRoute component={Lobby} />}
+          path="/lobby" element={<ProtectedRoute component={Lobby} />}
         />
         <Route
-          path="/scoprimi/game" element={<ProtectedRoute component={Game} />}
+          path="/game" element={<ProtectedRoute component={Game} />}
         />
-        <Route path="/scoprimi/final-results" element={<FinalResults />} />
-        <Route path="/scoprimi/error" element={<ErrorPage />} />
+        <Route path="/final-results" element={<FinalResults />} />
+        <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </Router>
   </SessionProvider >
